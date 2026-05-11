@@ -139,7 +139,7 @@ bot.on('callback_query', async (query) => {
       {
         chat_id: chatId, message_id: query.message.message_id, parse_mode: 'Markdown',
         reply_markup: { inline_keyboard: [
-          [{ text: '🎥  شاهد الفيديو التعريفي الخص بـ أاحمد العتوم', url: 'https://t.me/startwithotoom' }],
+          [{ text: '🎥  شاهد الفيديو التعريفي الخص بـ أحمد العتوم', url: 'https://t.me/startwithotoom' }],
           [{ text: '📲 تواصل مع المساعد مباشرة', url: 'https://wa.me/441245822927' }],
           [{ text: '🔙 رجوع للقائمة الرئيسية', callback_data: 'back_start' }]
         ]}
