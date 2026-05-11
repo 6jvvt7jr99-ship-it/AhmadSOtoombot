@@ -66,7 +66,26 @@ bot.on('callback_query', async (query) => {
         reply_markup: {
           inline_keyboard: [
             [{ text: '📱 صفحاتنا على السوشيال ميديا', callback_data: 'social' }],
-            [{ text: '📈 أريد أتعلم التداول', callback_data: 'trading_q1' }]
+            [{ text: '📈 أريد أتعلم التداول', callback_data: 'trading_q1' }],
+            [{ text: '📊 تحليل الذهب المجاني', callback_data: 'gold' }]
+          ]
+        }
+      }
+    );
+  }
+
+  // =================== GOLD ===================
+  if (data === 'gold') {
+    await bot.editMessageText(
+      '📊 *تحليل الذهب المجاني*\n\nالتحليل اليومي لحركة الذهب في قناة العصامي وبشكل مجاني!',
+      {
+        chat_id: chatId,
+        message_id: query.message.message_id,
+        parse_mode: 'Markdown',
+        reply_markup: {
+          inline_keyboard: [
+            [{ text: '👇 انضم للقناة', url: 'https://t.me/ahmadsotoomm' }],
+            [{ text: '🔙 رجوع', callback_data: 'back_start' }]
           ]
         }
       }
@@ -199,7 +218,7 @@ bot.on('callback_query', async (query) => {
         reply_markup: {
           inline_keyboard: [
             [{ text: '🎥 شاهد فيديو أحمد عن GOAI', url: 'https://t.me/startwithotoom' }],
-            [{ text: '📲 تواصل مع المساعد مباشرة', url: 'wa.me/441245822927' }],
+            [{ text: '📲 تواصل مع المساعد مباشرة', url: 'https://t.me/GCAbd' }],
             [{ text: '🔙 رجوع للقائمة الرئيسية', callback_data: 'back_start' }]
           ]
         }
