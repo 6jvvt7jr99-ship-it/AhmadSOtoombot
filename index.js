@@ -199,7 +199,7 @@ bot.on('callback_query', async (query) => {
         reply_markup: {
           inline_keyboard: [
             [{ text: '🎥 شاهد فيديو أحمد عن GOAI', url: 'https://t.me/startwithotoom' }],
-            [{ text: '📲 تواصل مع المساعد مباشرة', url: 'https://t.me/GCAbd' }],
+            [{ text: '📲 تواصل مع المساعد مباشرة', url: 'wa.me/441245822927' }],
             [{ text: '🔙 رجوع للقائمة الرئيسية', callback_data: 'back_start' }]
           ]
         }
